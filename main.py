@@ -21,6 +21,7 @@ def spam():
     page.locator("text=SendEnter").click()
     page.locator("text=StopEsc").click()
     page.locator("text=Really?Esc").click()
+    page.wait_for_timeout(1000)
     page.locator("text=NewEsc").click()
     print(f"[{cont}] Messages sent")
 
